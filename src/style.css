@@ -1,0 +1,174 @@
+body, div, section, form, input {
+    box-sizing: border-box;
+}
+body {
+    width: 1440px;
+    height: 900px;
+    background-color: hsl(0, 100%, 100%);
+    margin: 0px;
+    position: relative;
+    display: flex;
+}
+p, label, span, input, button, h1 {
+    margin: 0px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#cartões {
+    position: absolute;
+    top: 0px;
+}
+#cartões div {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+.card-front {
+    top: 190px;
+    left: 180px;
+}
+#card-logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#cartões div p, div h1 {
+    position: absolute;
+    color: hsl(0, 100%, 100%);
+}
+#número-cartão {
+    bottom: 80px;
+    left: 30px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+#nome-cartão {
+    bottom: 30px;
+    left: 30px;
+    text-transform: uppercase;
+}
+#data-cartão {
+    bottom: 30px;
+    right: 30px;
+}
+.card-back {
+    top: 220px;
+    left: 260px;
+}
+#cvc-cartão {
+    right: 60px;
+    top: 110px;
+}
+.active-states {
+    display: block;
+    padding: 200px 350px 200px;
+}
+form {
+    width: 430px;
+    display: flex;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+form div {
+    margin: 0px 0px 40px 0px;
+}
+.campo-formulário-data {
+    width: 215px;
+}
+.campo-formulário-cvc {
+    width: 215px;
+}
+
+label {
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+}
+input, button {
+    border-radius: 10px;
+}
+input {
+    padding: 15px;
+    margin: 5px 0px 5px;
+    border-style: solid;
+    border-color: hsl(212, 12%, 71%);
+    color: hsl(278, 68%, 11%);
+    font-size: 18px;
+    
+}
+::-webkit-input-placeholder {
+   color: hsl(212, 12%, 71%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: hsl(212, 12%, 71%);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: hsl(212, 12%, 71%);  
+}
+
+:-ms-input-placeholder {  
+   color: hsl(212, 12%, 71%);  
+}
+#nome-input, #número-input {
+    width: 430px;
+}
+#mes-input, #ano-input {
+    width: 90px;
+}
+#mes-input {
+    margin-right: 7px;
+}
+#ano-input {
+    margin-right: 23px;
+}
+#cvc-input {
+    width: 215px;
+}
+span {
+    //display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+}
+button {
+    margin-top: 20px;
+    padding: 20px;
+    width: 430px;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 10px;
+    border-style: hidden;
+    color: hsl(0, 100%, 100%);
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(278, 68%, 25%);
+}
+.complete-state {
+    padding: 280px 350px 350px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.complete-state h1, .complete-state p {
+   width: 430px;
+   text-align: center;
+}
+.complete-state h1 {
+    margin: 30px 0px 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(278, 68%, 11%);
+}
+.complete-state p {
+    margin-bottom: 40px;
+    color: hsl(212, 12%, 71%);
+}
